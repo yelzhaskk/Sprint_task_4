@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Твитер</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">TWITTER</div>
+        <ul>
+            <a class="a" href="#">Tweets</a>
+            <a class="a" href="../login.html">Login</a>
+            <a class="a" href="../register/register.html">Register</a>
+        </ul>
+    </header>
+
+    <div class="container">
+        <p>Email: <br><span id="email"></span></p>
+        <p>Username: <br><span id="userName"></span></p>
+        <p>First name: <br><span id="firstName"></span></p>
+        <p>Last name: <br><span id="lastName"></span></p>
+        <p>Country: <br><span id="country"></span></p>
+        <p>Date: <br><span id="date"></span></p>
+    </div>
+    <script>
+        const email = localStorage.getItem('email');
+        const userName = localStorage.getItem('userName');
+        const firstName = localStorage.getItem('firstName');
+        const lastName = localStorage.getItem('lastName');
+        const country = localStorage.getItem('country');
+        const date = localStorage.getItem('date');
+
+        document.getElementById('email').innerHTML = email;
+        document.getElementById('userName').innerHTML = userName;
+        document.getElementById('firstName').innerHTML = firstName;
+        document.getElementById('lastName').innerHTML = lastName;
+        document.getElementById('country').innerHTML = country;
+        document.getElementById('date').innerHTML = date;
+    </script>
+</body>
+</html>
+
